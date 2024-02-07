@@ -1,3 +1,4 @@
+import 'data.dart';
 import 'outrs.dart';
 
 class Professor extends DataInit {
@@ -16,5 +17,11 @@ class Professor extends DataInit {
   @override
   void datainit() {
     print("iniciou as 22");
+  }
+
+  void ListNotasAlunos() {
+    notaAluno.forEach((key, value) {
+      print({key: value});
+    });
   }
 }
